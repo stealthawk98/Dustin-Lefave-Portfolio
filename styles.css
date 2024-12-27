@@ -6,10 +6,14 @@ html{
     text-decoration: none;
     color: #f5f0aa;
     padding-left: 10px;
-    
-    
   }
-  
+
+a:hover{
+    transform: translate(-5px) scale (1.5);
+    color: #0078ff;
+}
+
+    
   body{
     height: 100vh;
     min-height: 250vh;
