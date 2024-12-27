@@ -1,19 +1,21 @@
 html{
-    background: linear-gradient(200deg, white, midnightblue)
+    background: linear-gradient(200deg, white, midnightblue);
+    font-family: 'Quicksand', sans-serif;
   }
   
   a{
     text-decoration: none;
     color: #f5f0aa;
     padding-left: 10px;
+    
+    
   }
 
-a:hover{
-    transform: translateY(-5px) scale(1.5);
+  a:hover{
+    transform: translate(-5px) scale(1.5);
     color: #0078ff;
 }
-
-    
+  
   body{
     height: 100vh;
     min-height: 250vh;
@@ -23,6 +25,7 @@ a:hover{
     justify-content: center;
     align-items: center;
     width: auto;
+    padding-top: 10vh;
     
   
   }
@@ -37,9 +40,18 @@ a:hover{
   background-color: #1b1b1b;
   opacity: .75 ;
   width: 100%;
-  margin: auto;
-  height: 10vh;
+  margin-top: 0px;
+ line-height: 35px;
+  z-index: 1000; /* Ensure the header stays on top */
+
+    box-sizing: border-box; 
   }
+
+  .header h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 10vh; /* Ensure the text is vertically centered */
+}
   
   .header_wrapper {
     display: flex;
@@ -63,7 +75,7 @@ a:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    font-family: 'Raleway', sans-serif;
+    
     font-weight: 700;
   
   }
@@ -121,7 +133,7 @@ a:hover{
     padding-top:10px;
     margin: 0px;
     font-size: 20px;
-    font-family: 'Raleway', sans-serif;
+    
   
   }
   
@@ -175,10 +187,27 @@ a:hover{
     display: flex;
     justify-content: center;
     color: #f5f0aa;
-    font-family: 'Raleway', sans-serif;
+    
     font-size: 25px;
     margin: 2px;
   
   }
 
+  /* Responsive Styles */
+@media (max-width: 100%) {
+  .header_wrapper {
+      flex-direction: column;
+      text-align: center;
+  }
   
+  
+  nav-bar {
+      flex-direction: column;
+      gap: 10px;
+      
+  }
+  .project-tile {
+      margin: 10px auto;
+      width: 100%;
+  }
+}
