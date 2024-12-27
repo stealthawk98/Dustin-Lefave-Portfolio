@@ -9,7 +9,7 @@ html{
   }
 
 a:hover{
-    transform: translateY(-5px) scale (1.5);
+    transform: translateY(-5px) scale(1.5);
     color: #0078ff;
 }
 
